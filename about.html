@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>about</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/about.css" />
+        <link rel="stylesheet" href="css/all.min.css" />
+      </head>
+
+      <body>
+        <nav>
+          <div class="container">
+            <div class="nav">
+              <h1 class="main_title">Trendify</h1>
+              <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/shop.html">Shop</a></li>
+                <li><a href="/blog.html">blog</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/signUp.html">signUp</a></li>
+                <li><a href="/login.html">login</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <section style="padding-top: 100px; background: #29292929"  id="title">
+          <div class="container flex justify-between">
+            <div class="left">
+              <h1>about</h1>
+            </div>
+            <div class="right">
+              <p><a href="#">Home</a> / about</p>
+            </div>
+          </div>
+        </section>
+        <section  class=" section ">
+<div class="container hero_about section-main">
+  <div>
+    <img src="./img/about/imageperson.jpeg" style="height: 540px; object-fit: cover;" alt="Person Image" />
+  </div>
+  <div class="section-text">
+    <h1 style="font-weight: 500;">Who we are?</h1>
+    <p
+      style="
+        font-size: 16px;
+        color: #999;
+        font-weight: 400;
+        line-height: 1.76em;
+      "
+    >
+      We have been operating for over 30 years and are Members of The
+      Federation of Master Builders. We work on projects big and small from
+      small residential extensions to full house. We are so happy with this
+      theme. Everyday it make our lives better.
+    </p>
+
+    <ul class="features-list">
+      <li>
+        <div class="icon-container">
+          <i class="fa-brands fa-envira"></i>
+        </div>
+        <span>We care about environment.</span>
+      </li>
+      <li>
+        <div class="icon-container">
+          <i class="fa-solid fa-users"></i>
+        </div>
+        <span>We are trusted by hundreds of clients.</span>
+      </li>
+      <li>
+        <div class="icon-container">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <span>Social media loves us!</span>
+      </li>
+      <li>
+        <div class="icon-container">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <span>This list is super easy to create.</span>
+      </li>
+    </ul>
+  </div>
+</div>
+        </section>
+        <section class="video-section bg-sec   ">
+          <div class="container flex-col gap-16">
+            <div 
+            style="margin-bottom: 30px;"
+            class="special_title flex justify-center align-center flex-col">
+              <h3>Our Video</h3>
+              <p>Learn more about us from this video.</p>
+            </div>
+            <div  class="video-container ">
+              <img
+                src="https://img.youtube.com/vi/jzimZnHfys8/maxresdefault.jpg"
+                alt="Video Thumbnail"
+                onclick="showVideo()"
+              />
+              <div id="video-popup" class="video-popup" onclick="closeVideo(event)">
+                <div class="video-wrapper" onclick="stopPropagation(event)">
+                  <iframe id="youtube-video" src="" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <script>
+          // عرض الفيديو
+          function showVideo() {
+            const popup = document.getElementById("video-popup");
+            const iframe = document.getElementById("youtube-video");
+    
+            popup.style.display = "flex"; // عرض النافذة
+            iframe.src = "https://www.youtube.com/embed/jzimZnHfys8"; // تشغيل الفيديو الجديد
+          }
+    
+          // غلق الفيديو عند النقر على الخلفية
+          function closeVideo(event) {
+            const popup = document.getElementById("video-popup");
+            const iframe = document.getElementById("youtube-video");
+    
+            if (event.target.id === "video-popup") {
+              // إذا تم النقر على الخلفية
+              popup.style.display = "none"; // إخفاء النافذة
+              iframe.src = ""; // إيقاف الفيديو
+            }
+          }
+    
+          // منع غلق الفيديو عند النقر داخل محتوى الفيديو
+          function stopPropagation(event) {
+            event.stopPropagation();
+          }
+        </script>
+        <!-- قسم الميزات -->
+        <section class="shop-features section">
+          <h2>Shop Features</h2>
+          <p>What we're great at.</p>
+          <div class="features-container">
+              <!-- الصف الأول -->
+              <div class="feature-item">
+                  <h3>Facilities</h3>
+                  <p>We offer you the best shopping experience with a wide range of perfectly organized products to meet your needs.</p>
+              </div>
+              <div class="feature-item">
+                  <h3>Best Equipment</h3>
+                  <p>We use the latest tools and technologies to ensure the quality of our products and your satisfaction.</p>
+              </div>
+              <div class="feature-item">
+                  <h3>Incredible Location</h3>
+                  <p>Visit us at our prime location, easily accessible and perfectly placed in the heart of the city for a unique shopping experience.</p>
+              </div>
+              <!-- الصف الثاني -->
+              <div class="feature-item">
+                  <h3>Trendy Styles</h3>
+                  <p>Stay ahead of the fashion curve with our collection of trendy and stylish clothing for every occasion.</p>
+              </div>
+              <div class="feature-item">
+                  <h3>Affordable Prices</h3>
+                  <p>Enjoy premium quality at prices that suit every budget, making fashion accessible for everyone.</p>
+              </div>
+              <div class="feature-item">
+                  <h3>Customer Care</h3>
+                  <p>Our team is dedicated to providing exceptional service, ensuring your shopping journey is smooth and enjoyable.</p>
+              </div>
+          </div>
+      </section>
+        <section class="team-section section">
+          <div class="container">
+        <div 
+    style="margin-bottom: 30px;"
+    class="special_title flex justify-center align-center flex-col">
+      <h2>Our Team</h2>
+      <p>Meet our fantastic team!</p>
+    </div>
+            <div class="team-container">
+              <!-- الصف الأول -->
+              <div class="team-member">
+                <img src="./img/about/basem.jpeg" alt="Basem Essam" />
+                <div class="overlay">
+                  <h3>Basem Essam</h3>
+                  <p>Web Developer</p>
+                  <div class="social-links">
+                    <a href="https://www.linkedin.com/in/basem-esam-b5968328a"
+                      ><i class="fa-brands fa-linkedin"></i>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="team-member">
+                <img src="./img/about/khaled.jpeg" alt="Khaled Ghoneim" />
+                <div class="overlay">
+                  <h3>Khaled Ghoneim</h3>
+                  <p>Web Developer</p>
+                  <div class="social-links">
+                    <a href="https://eg.linkedin.com/in/khaled-mohamed-453439299"
+                      ><i class="fa-brands fa-linkedin"></i>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="team-member">
+                <img src="./img/about/dina.jpeg" alt="Dina Samy" />
+                <div class="overlay">
+                  <h3>Dina Samy</h3>
+                  <p>Web Developer</p>
+                  <div class="social-links">
+                    <a href="https://www.linkedin.com/in/dina-samy-3095002a6/"
+                      ><i class="fa-brands fa-linkedin"></i>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- الصف الثاني -->
+              <div class="team-member">
+                <img src="./img/about/esraa.jpeg" alt="Esraa Saeid" />
+                <div class="overlay">
+                  <h3>Esraa Saeid</h3>
+                  <p>Web Developer</p>
+                  <div class="social-links">
+                    <a href="https://www.linkedin.com/in/esraa-saeid-08b91631a/"
+                      ><i class="fa-brands fa-linkedin"></i>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="team-member">
+                <img src="./img/about/ziad.jpeg" alt="Ziad Alaa" />
+                <div class="overlay">
+                  <h3>Ziad Alaa</h3>
+                  <p>Web Developer</p>
+                  <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ziad-alaa-1a1269315/"
+                      ><i class="fa-brands fa-linkedin"></i>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="team-member">
+                <img src="./img/about/haneen.jpeg" alt="Haneen Hatem" />
+                <div class="overlay">
+                  <h3>Haneen Hatem</h3>
+                  <p>Web Developer</p>
+                  <div class="social-links">
+                    <a href="https://www.linkedin.com/in/haneen-hatem-21a4ab291/"
+                      ><i class="fa-brands fa-linkedin"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="team-member">
+                <img src="./img/about/rana.jpeg" alt="Rana Ashraf" />
+                <div class="overlay">
+                  <h3>Rana Ashraf</h3>
+                  <p>Web Developer</p>
+                  <div class="social-links">
+                    <a href="https://www.linkedin.com/in/rana-ashraf-600b622a9/"
+                      ><i class="fa-brands fa-linkedin"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </section>
+    
+        <section class="shopping-section section">
+          <div class="content container">
+            <h2>How about shopping?</h2>
+            <p>Check all our products.</p>
+            <div>
+              <button class="shop-button">VISIT SHOP</button>
+            </div>
+          </div>
+        </section>
+        <footer id="footer-bottom" class="footer-bottom bg-main footer-style-classic">
+          <div class="container">
+            <div class="flex py-12 justify-between align-center">
+              <div class="">
+                <p class="copyright">Copyright 2017. All rights reserved.</p>
+              </div>
+              <div class=" flex justify-end gap-16">
+                <a href="#" class="social icon-facebook" target="_blank"
+                  ><i class="fa-brands fa-facebook"></i></a
+                ><a href="#" class="social icon-google" target="_blank"
+                  ><i class="fa fa-google fa-brands"></i></a
+                ><a href="#" class="social icon-linkedin" target="_blank"
+                  ><i class="fa fa-linkedin fa-brands"></i></a
+                ><a href="#" class="social icon-twitter" target="_blank"
+                  ><i class="fa fa-twitter fa-brands"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <script src="js/index.js"></script>
+      </body>
+</html>

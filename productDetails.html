@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProductDetails</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/productDetails.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="nav">
+          <h1 class="main_title">Trendify</h1>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/shop.html">Shop</a></li>
+            <li><a href="/blog.html">blog</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/signUp.html">signUp</a></li>
+            <li><a href="/login.html">login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section style="padding-top: 100px; background: #29292929" id="title">
+      <div class="container flex justify-between">
+        <div class="left">
+          <h1>ProductDetails</h1>
+        </div>
+        <div class="right">
+          <p><a href="#">Home</a> / ProductDetails</p>
+        </div>
+      </div>
+    </section>
+    <section class="product-page container section">
+      <div class="product-container">
+        <div class="product-image">
+          <img
+            src="./img/productDetails/images3 (2) (1).jpg"
+            alt="Fancy Shoes"
+          />
+        </div>
+        <div class="product-info">
+          <h1>Fancy Shoes</h1>
+          <div class="rating">
+            <span>⭐⭐⭐⭐☆</span> <span>(2 customer reviews)</span>
+          </div>
+
+          <p class="price">£35.00</p>
+          <p class="description">
+            Pellentesque habitant morbi tristique senectus et netus et malesuada
+            fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+            ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+            egestas semper. Aenean ultricies mi vitae est. Mauris placerat
+            eleifend leo.
+          </p>
+          <div class="line">
+            <hr />
+          </div>
+          <div class="actions" style="padding-top: 32px">
+            <input type="number" style="padding: 8px" value="1" min="1" />
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+          <p class="categories">
+            Categories: <a href="#">Clothing</a>, <a href="#">T-shirts</a>
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="tabs" style="margin-top: 40px">
+          <div class="tab active">Description</div>
+          <div class="tab">Reviews (2)</div>
+        </div>
+        <div style="margin-top: 40px" class="dd"><h1>Description</h1></div>
+        <div class="description">
+          <p>
+            Pellentesque habitant morbi tristique senectus et netus et malesuada
+            fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+            ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+            egestas semper. Aenean ultricies mi vitae est. Mauris placerat
+            eleifend leo.
+          </p>
+        </div>
+        <div class="related-products">
+          <h2>Related products</h2>
+          <div class="products">
+            <div class="product">
+              <img
+                src="./img/productDetails/images5 (2).jpg"
+                alt="Jeans Shorts"
+              />
+              <h3>Jeans Shorts</h3>
+              <p>£20.00</p>
+              <div class="hover-overlay">
+                <a href="#">View Details</a>
+              </div>
+            </div>
+            <div class="product">
+              <img
+                src="./img/productDetails/images1 (8).jpg"
+                alt="Beige Shorts"
+              />
+              <h3>Beige Shorts</h3>
+              <p>£35.00</p>
+              <div class="hover-overlay">
+                <a href="#">View Details</a>
+              </div>
+            </div>
+            <div class="product">
+              <img
+                src="./img/productDetails/images2 (3).jpg"
+                alt="Lily Shirt"
+              />
+              <h3>Lily Shirt</h3>
+              <p>£20.00</p>
+              <div class="hover-overlay">
+                <a href="#">View Details</a>
+              </div>
+            </div>
+            <div class="product">
+              <img src="./img/productDetails/images4 (2).jpg" alt="Fancy Bag" />
+              <h3>Fancy Bag</h3>
+              <p>£35.00</p>
+              <div class="hover-overlay">
+                <a href="#">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      id="footer-bottom"
+      class="footer-bottom bg-main footer-style-classic"
+    >
+      <div class="container">
+        <div class="flex py-12 justify-between align-center">
+          <div class="">
+            <p class="copyright">Copyright 2017. All rights reserved.</p>
+          </div>
+          <div class="flex justify-end gap-16">
+            <a href="#" class="social icon-facebook" target="_blank"
+              ><i class="fa-brands fa-facebook"></i></a
+            ><a href="#" class="social icon-google" target="_blank"
+              ><i class="fa fa-google fa-brands"></i></a
+            ><a href="#" class="social icon-linkedin" target="_blank"
+              ><i class="fa fa-linkedin fa-brands"></i></a
+            ><a href="#" class="social icon-twitter" target="_blank"
+              ><i class="fa fa-twitter fa-brands"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

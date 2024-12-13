@@ -1,0 +1,122 @@
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  color: #fefefe;
+  border-bottom: 1px solid #444444;
+}
+
+.breadcrumb-left h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #fefefe;
+}
+
+.breadcrumb-right p {
+  margin: 0;
+  font-size: 16px;
+  color: #444444;
+}
+
+#priceRange {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#priceValue {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.helpful-tips p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.reviews {
+  margin-top: auto;
+  color: #dcdcdc;
+}
+
+.reviews p {
+  margin-bottom: 10px;
+  color: #b0b0b0;
+}
+
+.reviews strong {
+  color: #ffffff;
+}
+
+.add-to-cart-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3;
+}
+
+#filter-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-button {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 75%;
+}
+.shop {
+  display: flex;
+  gap: 40px;
+}
+aside {
+  width: 25%;
+}
+.product {
+  width: calc(100% / 3);
+}
+.inner {
+  padding: 12px;
+}

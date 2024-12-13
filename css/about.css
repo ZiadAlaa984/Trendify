@@ -1,0 +1,273 @@
+/* ! section_1 start  */
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.features-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #33a8e8;
+  height: 52px;
+  width: 52px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.icon-container i {
+  color: white;
+  font-size: 24px;
+}
+.features-list span {
+  font-size: 18px;
+  color: #999;
+  font-weight: 400;
+}
+.hero_about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  gap: 76px;
+}
+.hero_about > div {
+  width: 50%;
+}
+.hero_about img {
+  width: 100%;
+}
+
+.section-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 15px;
+  line-height: 1.8em;
+}
+
+.section-text ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section-text ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+/* ! section_1 end  */
+/* section video*/
+/* ! section_2 start  */
+.video-section {
+  text-align: center;
+  color: #fff;
+  padding: 70px 30px;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-container img {
+  width: 200%;
+
+  max-width: 700px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.video-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.video-popup.active {
+  display: flex;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+}
+/* ! section_2 end  */
+/* section features */
+/* ! section_3 start  */
+/* قسم الميزات */
+.shop-features {
+  text-align: center;
+  background-color: #111; /* لون الخلفية */
+  color: #fff; /* لون النص */
+  padding: 40px 20px;
+}
+
+.shop-features h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.shop-features p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* مسافة بين العناصر */
+}
+
+.feature-item {
+  background-color: #222; /* خلفية العنصر */
+  padding: 20px;
+  border-radius: 8px;
+  width: 30%; /* عرض العنصر 30% */
+  min-width: 250px; /* أقل عرض */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.feature-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+/* ! section_3 end */
+/* team_section */
+.team-section {
+  text-align: center;
+  background-color: #161616;
+  color: #fff;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.team-member {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.team-member img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.team-member:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.team-member:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.social-links i {
+  font-size: 30px;
+  color: #00aaff;
+}
+.social-links a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #00aaff;
+}
+
+/* last_section */
+.shopping-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.shopping-section .content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.shopping-section h2 {
+  font-size: 2.5em;
+}
+
+.shopping-section p {
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.shopping-section .shop-button {
+  background-color: #33a8e8;
+  color: #fff;
+  border: 2px solid transparent;
+  padding: 20px 28px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.shopping-section {
+  background-color: #111; /* خلفية العنصر */
+}

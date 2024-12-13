@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Blog-Dark Shop</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="nav" style="width: 100%">
+          <h1 class="main_title">Trendify</h1>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/shop.html">Shop</a></li>
+            <li><a href="/blog.html">blog</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/signUp.html">signUp</a></li>
+            <li><a href="/login.html">login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section style="padding-top: 100px; background: #29292929" id="title">
+      <div class="container">
+        <div class="left">
+          <h1>Blog</h1>
+        </div>
+        <div class="right">
+          <p><a href="#">Home</a> / Blog</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="content">
+      <div class="wrapper">
+        <div
+          class="left-column"
+          id="BlugContainer"
+          style="width: 75%; height: fit-content"
+        >
+          <div class="card index-1">
+            <div class="inner">
+              <a href="#" class="a1">
+                <div class="top">
+                  <h4>
+                    Two things are infinite: the universe and human stupidity;
+                    and I'm not sure about the universe.
+                  </h4>
+                  <span>- Albert Einstein</span>
+                </div>
+              </a>
+              <div class="card-content">
+                <h4><a href="#">Quote Post</a></h4>
+                <p class="p1">By <a href="#"> Philip </a> on August 22, 2017</p>
+                <p class="p2">
+                  uis autem vel eum iriure dolor in hendrerit in vulputate velit
+                  esse molestie consequat, vel illum dolore eu feugiat nulla
+                  facilisis at vero eros...
+                </p>
+                <p class="p-after"><a href="#"> Read More </a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="right-column" style="width: 25%">
+          <div class="search-container">
+            <input
+              id="Search"
+              oninput="filterBySearch()"
+              type="text"
+              placeholder="Search...."
+            />
+            <button>
+              <i
+                class="fa-solid fa-magnifying-glass"
+                style="font-size: 14px"
+              ></i>
+            </button>
+          </div>
+          <hr />
+          <div>
+            <h5>Recent Posts</h5>
+            <ul class="post-list">
+              <li><a href="#">Cool Post</a></li>
+              <li><a href="#">Simple Post</a></li>
+              <li><a href="#">Gallery Post</a></li>
+              <li><a href="#">Basic Post</a></li>
+              <li><a href="#">Quote Post</a></li>
+            </ul>
+          </div>
+          <hr />
+          <div>
+            <h5>Recent Comments</h5>
+            <ul class="post-list">
+              <li>Phil on<a href="#"> Simple Post</a></li>
+              <li>Maria on<a href="#"> Brown Shoes</a></li>
+              <li>Maria on<a href="#"> Beige Shorts</a></li>
+              <li>Maria on<a href="#"> Fancy Bag</a></li>
+              <li>Maria on<a href="#"> Color Bag</a></li>
+            </ul>
+          </div>
+          <hr />
+          <div>
+            <h5>Archives</h5>
+            <ul class="post-list">
+              <li><a href="#">August 2017</a></li>
+              <li><a href="#">April 2017</a></li>
+            </ul>
+          </div>
+          <hr />
+          <div>
+            <h5>Categories</h5>
+            <ul class="post-list">
+              <li><a href="#">Classes</a></li>
+              <li><a href="#">Photography</a></li>
+              <li><a href="#">Travel</a></li>
+            </ul>
+          </div>
+          <hr />
+          <div>
+            <h5>Meta</h5>
+            <ul class="post-list">
+              <li><a href="#"> Log in</a></li>
+              <li><a href="#"> Entries RSS</a></li>
+              <li><a href="#"> Comments RSS</a></li>
+              <li><a href="#"> WordPress.org</a></li>
+            </ul>
+          </div>
+          <hr />
+          <div>
+            <h5>Latest News</h5>
+            <ul class="post-list no-before">
+              <li>
+                <a href="#"
+                  >Cool Post
+                  <p>Aug 23, 2017</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Simple Post
+                  <p>Aug 22, 2017</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Gallery Post
+                  <p>Aug 22, 2017</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Basic Post
+                  <p>Aug 22, 2017</p></a
+                >
+              </li>
+            </ul>
+          </div>
+          <hr />
+
+          <div class="top-rated">
+            <h3>Top rated products</h3>
+            <div class="top-rated-div">
+              <div class="top-rated-title">
+                <h4>Basic Sandals</h4>
+                <div class="flex align-center top-rated-icons">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>£20.00</p>
+              </div>
+              <div class="top-rated_img">
+                <img src="img/blog/images10.jpg" alt="" />
+              </div>
+            </div>
+            <div class="top-rated-div">
+              <div class="top-rated-title">
+                <h4>Basic Sandals</h4>
+                <div class="flex align-center top-rated-icons">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>£20.00</p>
+              </div>
+              <div class="top-rated_img">
+                <img src="img/blog/images11.jpg" alt="" />
+              </div>
+            </div>
+            <div class="top-rated-div">
+              <div class="top-rated-title">
+                <h4>Basic Sandals</h4>
+                <div class="flex align-center top-rated-icons">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>£20.00</p>
+              </div>
+              <div class="top-rated_img">
+                <img src="img/blog/images09.jpg" alt="" />
+              </div>
+            </div>
+            <div class="top-rated-div">
+              <div class="top-rated-title">
+                <h4>Basic Sandals</h4>
+                <div class="flex align-center top-rated-icons">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>£20.00</p>
+              </div>
+              <div class="top-rated_img">
+                <img src="img/blog/images08.jpg" alt="" />
+              </div>
+            </div>
+            <div class="top-rated-div">
+              <div class="top-rated-title">
+                <h4>Basic Sandals</h4>
+                <div class="flex align-center top-rated-icons">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>£20.00</p>
+              </div>
+              <div class="top-rated_img">
+                <img src="img/blog/images7.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <footer
+      id="footer-bottom"
+      class="footer-bottom bg-main footer-style-classic"
+    >
+      <div class="container">
+        <div class="flex py-12 justify-between align-center">
+          <div class="">
+            <p class="copyright">Copyright 2017. All rights reserved.</p>
+          </div>
+          <div class="flex justify-end gap-16">
+            <a href="#" class="social icon-facebook" target="_blank"
+              ><i class="fa-brands fa-facebook"></i></a
+            ><a href="#" class="social icon-google" target="_blank"
+              ><i class="fa fa-google fa-brands"></i></a
+            ><a href="#" class="social icon-linkedin" target="_blank"
+              ><i class="fa fa-linkedin fa-brands"></i></a
+            ><a href="#" class="social icon-twitter" target="_blank"
+              ><i class="fa fa-twitter fa-brands"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/blog.js"></script>
+  </body>
+</html>

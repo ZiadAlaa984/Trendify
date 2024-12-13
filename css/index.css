@@ -1,0 +1,159 @@
+/* hero section */
+.hero {
+  background-image: url("../img/home/hero.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.overlay {
+  padding-top: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.overlay h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+.overlay h2 {
+  font-size: 76px;
+  margin-bottom: 18px;
+}
+.overlay p {
+  max-width: 500px;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.btn_hero {
+  padding: 15px 28px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  background-color: white;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: black;
+}
+/* about section */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title_about {
+  gap: 32px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.title_about h3 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.title_about p {
+  font-size: 1.04em;
+  color: #999;
+}
+.img_about {
+  width: 50%;
+}
+.div_img {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.div_img img {
+  width: 237px;
+}
+.img_about {
+  background-image: url("../img/home/about.jpg");
+  width: 50%;
+  height: 851px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about2 {
+  background-image: url("../img/home/about2.jpg");
+}
+
+.bg-red {
+  background-color: red;
+}
+.card {
+  width: 25%;
+}
+.inner {
+  padding: 24px;
+}
+/* section features */
+/* ! section_3 start  */
+
+.features-container {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; /* مسافة بين العناصر */
+}
+
+.feature-item {
+  border-radius: 8px;
+  width: 30.33333%;
+}
+
+.feature-item h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  color: #999;
+  font-size: 15px;
+  line-height: 1.5;
+}
+/* ! section_3 end */
+.convinced {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+    url("../img/home/convinse.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 463px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.convinced > div {
+  gap: 16px;
+}
+.convinced h5 {
+  font-size: 36px;
+  line-height: 1.5em;
+}
+.convinced p {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 20px;
+  font-style: normal;
+  line-height: 1.5em;
+  margin-bottom: 0;
+}
+.convinced div {
+  margin-inline: auto;
+}
+.convinced .btn_hero {
+  background-color: transparent;
+
+  border: solid white;
+  cursor: pointer;
+
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.convinced .btn_hero:hover {
+  background-color: white;
+  color: black;
+}
