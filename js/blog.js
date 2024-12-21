@@ -5,7 +5,7 @@ const blogPosts = [
     author: "Philip",
     date: "August 23, 2017",
     description:
-      "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros...",
+      "In this post, we explore the latest trends in technology and design. We’ll show you how to incorporate these trends into your daily life. Keep reading for tips on improving your lifestyle with the latest innovations.",
     link: "#",
   },
   {
@@ -14,7 +14,7 @@ const blogPosts = [
     author: "Philip",
     date: "August 22, 2017",
     description:
-      "uis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros...",
+      "This simple post discusses easy yet effective ways to improve your everyday life. Learn how to tackle daily challenges in a straightforward and practical way, and how to better organize your time for a balance between work and personal life.",
     link: "#",
   },
   {
@@ -23,7 +23,7 @@ const blogPosts = [
     author: "Philip",
     date: "August 22, 2017",
     description:
-      "uis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros...",
+      "This gallery post features a collection of stunning images from various places around the world. Dive into the stories behind these beautiful moments captured at the perfect time.",
     link: "#",
   },
   {
@@ -32,7 +32,7 @@ const blogPosts = [
     author: "Philip",
     date: "August 23, 2017",
     description:
-      "uis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros...",
+      "This post covers the basics of building good habits. We’ll discuss how to start with simple habits that can improve both your mental and physical health. If you're looking for practical tips on incorporating these habits into your daily routine, this post is a great place to start.",
     link: "#",
   },
 ];
