@@ -112,7 +112,7 @@ function displayProduct(product) {
         <div class="prod_text">
           <h6>${product.name}</h6>
           <div class="justify-between flex">
-            <span> £${product.price} </span>
+            <span> $${product.price} </span>
             <span> Add to cart </span>
           </div>
         </div>
