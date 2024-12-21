@@ -3,7 +3,7 @@ const blogPosts = [
     title: "Cool Post",
     image: "./img/blog/images13.jpg",
     author: "Philip",
-    date: "August 23, 2017",
+    date: "August 23, 2024",
     description:
       "In this post, we explore the latest trends in technology and design. We’ll show you how to incorporate these trends into your daily life. Keep reading for tips on improving your lifestyle with the latest innovations.",
     link: "#",
@@ -12,7 +12,7 @@ const blogPosts = [
     title: "Simple Post",
     image: "./img/blog/full-4-600x375.jpg",
     author: "Philip",
-    date: "August 22, 2017",
+    date: "August 22, 2024",
     description:
       "This simple post discusses easy yet effective ways to improve your everyday life. Learn how to tackle daily challenges in a straightforward and practical way, and how to better organize your time for a balance between work and personal life.",
     link: "#",
@@ -21,7 +21,7 @@ const blogPosts = [
     title: "Gallery Post",
     image: "./img/blog/images04.jpg",
     author: "Philip",
-    date: "August 22, 2017",
+    date: "August 22, 2024",
     description:
       "This gallery post features a collection of stunning images from various places around the world. Dive into the stories behind these beautiful moments captured at the perfect time.",
     link: "#",
@@ -30,14 +30,14 @@ const blogPosts = [
     title: "Basic Post",
     image: "./img/blog/images05.jpg",
     author: "Philip",
-    date: "August 23, 2017",
+    date: "August 23, 2024",
     description:
       "This post covers the basics of building good habits. We’ll discuss how to start with simple habits that can improve both your mental and physical health. If you're looking for practical tips on incorporating these habits into your daily routine, this post is a great place to start.",
     link: "#",
   },
 ];
 
-const blogContainer = document.getElementById("BlugContainer");
+const blogContainer = document.getElementById("BlogContainer");
 const Search = document.getElementById("Search");
 
 // Function to display a single blog post
@@ -71,6 +71,8 @@ function displayAllBlogPosts(posts) {
 displayAllBlogPosts(blogPosts);
 
 function filterBySearch() {
+  console.log(Search.value);
+
   const searchValue = Search.value.toLowerCase();
   const filteredPosts = blogPosts.filter((blog) =>
     blog.title.toLowerCase().includes(searchValue)

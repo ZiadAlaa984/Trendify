@@ -3,7 +3,6 @@ const passwordRegex = /^[A-Za-z0-9]{6,}$/;
 
 const inputEmail = document.getElementById("inputEmail");
 const inputPassword = document.getElementById("inputPassword");
-console.log(inputEmail, inputPassword);
 // Validation function
 function validation(regex, input) {
   if (regex.test(input.value)) {

@@ -19,7 +19,7 @@
         <nav>
           <div class="container">
             <div class="nav">
-              <h1 class="main_title">Trendify</h1>
+              <h1 class="main_title"><a href="./index.html">Trendify</a></h1>
               <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
@@ -118,7 +118,6 @@
           function showVideo() {
             const popup = document.getElementById("video-popup");
             const iframe = document.getElementById("youtube-video");
-    
             popup.style.display = "flex"; // عرض النافذة
             iframe.src = "https://www.youtube.com/embed/jzimZnHfys8"; // تشغيل الفيديو الجديد
           }
@@ -135,10 +134,7 @@
             }
           }
     
-          // منع غلق الفيديو عند النقر داخل محتوى الفيديو
-          function stopPropagation(event) {
-            event.stopPropagation();
-          }
+
         </script>
         <!-- قسم الميزات -->
         <section class="shop-features section">
@@ -276,7 +272,7 @@
             <h2>How about shopping?</h2>
             <p>Check all our products.</p>
             <div>
-              <a style="padding-top: 8px;" href="./shop.html" class="shop-button">VISIT SHOP</a>
+              <a style="padding: 8px;" href="./shop.html" class="shop-button">VISIT SHOP</a>
             </div>
           </div>
         </section>
@@ -284,7 +280,7 @@
           <div class="container">
             <div class="flex py-12 justify-between align-center">
               <div class="">
-                <p class="copyright">Copyright 2017. All rights reserved.</p>
+                <p class="copyright">Copyright 2024. All rights reserved.</p>
               </div>
               <div class=" flex justify-end gap-16">
                 <a href="#" class="social icon-facebook" target="_blank"
@@ -300,6 +296,5 @@
             </div>
           </div>
         </footer>
-        <script src="js/index.js"></script>
       </body>
 </html>

@@ -72,7 +72,6 @@ const products = [
 let sizePrice;
 // Get product container
 const productContainer = document.getElementById("product-container");
-console.log();
 
 // Display all products
 displayAllProducts();
@@ -80,7 +79,7 @@ displayAllProducts();
 // Event listener for price range input
 document.getElementById("priceRange").addEventListener("input", function () {
   const priceValue = document.getElementById("priceValue");
-  const priceText = `${this.value} EGP`; // Set the text content correctly
+  const priceText = `${this.value} $`; // Set the text content correctly
   priceValue.textContent = priceText;
 
   // Extract the numeric value from priceText (remove non-digits)
@@ -112,7 +111,7 @@ function displayProduct(product) {
         <div class="prod_text">
           <h6>${product.name}</h6>
           <div class="justify-between flex">
-            <span> $${product.price} </span>
+            <span> EGP ${product.price} </span>
             <span> Add to cart </span>
           </div>
         </div>
