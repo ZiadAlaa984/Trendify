@@ -79,7 +79,7 @@ displayAllProducts();
 // Event listener for price range input
 document.getElementById("priceRange").addEventListener("input", function () {
   const priceValue = document.getElementById("priceValue");
-  const priceText = `${this.value} $`; // Set the text content correctly
+  const priceText = ` ${this.value} EGP`; // Set the text content correctly
   priceValue.textContent = priceText;
 
   // Extract the numeric value from priceText (remove non-digits)

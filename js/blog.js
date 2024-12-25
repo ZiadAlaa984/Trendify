@@ -1,7 +1,7 @@
 const blogPosts = [
   {
     title: "Cool Post",
-    image: "./img/blog/images13.jpg",
+    image: "./img/blog/img1.jpeg",
     author: "Philip",
     date: "August 23, 2024",
     description:
